@@ -1,0 +1,17 @@
+#import 'ConferenceFragment.graphql'
+
+query GetConference($id: ID!){
+    conference(id: $id) {
+        ...ConferenceFragment
+        websiteUrl
+        allSpeakers {
+            name
+            lastName
+            image {
+                url
+                title
+            }
+            aboutShort
+        }
+    }
+}

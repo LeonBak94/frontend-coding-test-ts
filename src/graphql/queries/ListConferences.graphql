@@ -1,0 +1,7 @@
+#import 'ConferenceFragment.graphql'
+
+query ListConferences {
+  conferences {
+    ...ConferenceFragment
+  }
+}

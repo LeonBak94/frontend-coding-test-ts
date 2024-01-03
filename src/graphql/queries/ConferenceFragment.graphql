@@ -1,0 +1,7 @@
+fragment ConferenceFragment on Conference {
+    id
+    name
+    startDate
+    endDate
+    slogan
+}
